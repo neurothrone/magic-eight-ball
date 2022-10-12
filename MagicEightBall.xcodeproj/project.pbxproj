@@ -13,7 +13,36 @@
 		2FA07A2528F6A45B004A0A00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA07A2428F6A45B004A0A00 /* Preview Assets.xcassets */; };
 		2FA07A2D28F6A495004A0A00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2FA07A2B28F6A495004A0A00 /* README.md */; };
 		2FA07A2E28F6A495004A0A00 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2FA07A2C28F6A495004A0A00 /* LICENSE */; };
+		2FA07A3628F6A65A004A0A00 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA07A3528F6A65A004A0A00 /* WidgetKit.framework */; };
+		2FA07A3828F6A65A004A0A00 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA07A3728F6A65A004A0A00 /* SwiftUI.framework */; };
+		2FA07A3B28F6A65A004A0A00 /* Complication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA07A3A28F6A65A004A0A00 /* Complication.swift */; };
+		2FA07A3D28F6A65A004A0A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA07A3C28F6A65A004A0A00 /* Assets.xcassets */; };
+		2FA07A4128F6A65A004A0A00 /* ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2FA07A3328F6A65A004A0A00 /* ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FA07A3F28F6A65A004A0A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FA07A1228F6A45A004A0A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA07A3228F6A65A004A0A00;
+			remoteInfo = ComplicationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FA07A4528F6A65A004A0A00 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2FA07A4128F6A65A004A0A00 /* ComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2FA07A1A28F6A45A004A0A00 /* MagicEightBall Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicEightBall Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +52,12 @@
 		2FA07A2428F6A45B004A0A00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FA07A2B28F6A495004A0A00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2FA07A2C28F6A495004A0A00 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2FA07A3328F6A65A004A0A00 /* ComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ComplicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA07A3528F6A65A004A0A00 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2FA07A3728F6A65A004A0A00 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2FA07A3A28F6A65A004A0A00 /* Complication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complication.swift; sourceTree = "<group>"; };
+		2FA07A3C28F6A65A004A0A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA07A3E28F6A65A004A0A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +65,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FA07A3028F6A65A004A0A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA07A3828F6A65A004A0A00 /* SwiftUI.framework in Frameworks */,
+				2FA07A3628F6A65A004A0A00 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +86,8 @@
 				2FA07A2C28F6A495004A0A00 /* LICENSE */,
 				2FA07A2B28F6A495004A0A00 /* README.md */,
 				2FA07A1C28F6A45A004A0A00 /* MagicEightBall Watch App */,
+				2FA07A3928F6A65A004A0A00 /* Complication */,
+				2FA07A3428F6A65A004A0A00 /* Frameworks */,
 				2FA07A1B28F6A45A004A0A00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2FA07A1A28F6A45A004A0A00 /* MagicEightBall Watch App.app */,
+				2FA07A3328F6A65A004A0A00 /* ComplicationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +120,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2FA07A3428F6A65A004A0A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA07A3528F6A65A004A0A00 /* WidgetKit.framework */,
+				2FA07A3728F6A65A004A0A00 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FA07A3928F6A65A004A0A00 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				2FA07A3A28F6A65A004A0A00 /* Complication.swift */,
+				2FA07A3C28F6A65A004A0A00 /* Assets.xcassets */,
+				2FA07A3E28F6A65A004A0A00 /* Info.plist */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +149,34 @@
 				2FA07A1628F6A45A004A0A00 /* Sources */,
 				2FA07A1728F6A45A004A0A00 /* Frameworks */,
 				2FA07A1828F6A45A004A0A00 /* Resources */,
+				2FA07A4528F6A65A004A0A00 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2FA07A4028F6A65A004A0A00 /* PBXTargetDependency */,
 			);
 			name = "MagicEightBall Watch App";
 			productName = "MagicEightBall Watch App";
 			productReference = 2FA07A1A28F6A45A004A0A00 /* MagicEightBall Watch App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2FA07A3228F6A65A004A0A00 /* ComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FA07A4228F6A65A004A0A00 /* Build configuration list for PBXNativeTarget "ComplicationExtension" */;
+			buildPhases = (
+				2FA07A2F28F6A65A004A0A00 /* Sources */,
+				2FA07A3028F6A65A004A0A00 /* Frameworks */,
+				2FA07A3128F6A65A004A0A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComplicationExtension;
+			productName = ComplicationExtension;
+			productReference = 2FA07A3328F6A65A004A0A00 /* ComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +189,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					2FA07A1928F6A45A004A0A00 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					2FA07A3228F6A65A004A0A00 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -122,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				2FA07A1928F6A45A004A0A00 /* MagicEightBall Watch App */,
+				2FA07A3228F6A65A004A0A00 /* ComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +227,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FA07A3128F6A65A004A0A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA07A3D28F6A65A004A0A00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FA07A2F28F6A65A004A0A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA07A3B28F6A65A004A0A00 /* Complication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FA07A4028F6A65A004A0A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FA07A3228F6A65A004A0A00 /* ComplicationExtension */;
+			targetProxy = 2FA07A3F28F6A65A004A0A00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2FA07A2628F6A45B004A0A00 /* Debug */ = {
@@ -265,6 +378,7 @@
 		2FA07A2928F6A45B004A0A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +409,7 @@
 		2FA07A2A28F6A45B004A0A00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +438,67 @@
 			};
 			name = Release;
 		};
+		2FA07A4328F6A65A004A0A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Complication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Complication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.Complication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		2FA07A4428F6A65A004A0A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Complication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Complication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.Complication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +516,15 @@
 			buildConfigurations = (
 				2FA07A2928F6A45B004A0A00 /* Debug */,
 				2FA07A2A28F6A45B004A0A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FA07A4228F6A65A004A0A00 /* Build configuration list for PBXNativeTarget "ComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA07A4328F6A65A004A0A00 /* Debug */,
+				2FA07A4428F6A65A004A0A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
